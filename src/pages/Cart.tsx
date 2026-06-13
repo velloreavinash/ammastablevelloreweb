@@ -51,7 +51,7 @@ export default function Cart() {
       .from('orders')
       .insert({
         cook_id: cookId,
-        customer_id: email, // using email as customer ID for web orders
+        customer_id: '00000000-0000-0000-0000-000000000000', // web guest order
         total_amount: total,
         cook_earnings: cookEarnings,
         platform_fee: platformFee,
